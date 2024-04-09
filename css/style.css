@@ -1,7 +1,47 @@
 body {
-    background-color: lavender;
+    background-color: rgb(122, 122, 190);
 }
 
-div {
+nav {
+    background-color: rgb(214, 214, 162);
+}
 
+.objOne {
+    
+}
+
+/* .wholeTrade {
+    display: grid;
+    background-color: rgb(214, 214, 162);
+    grid-template-rows: 1fr;
+    } */
+.trade1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 5fr 1fr;
+    margin: 8px;
+}
+
+/* .trade2 {
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 6px;
+}
+
+.trade3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 6fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 6px;
+}
+
+.trade4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 6px;
+} */
+
+.wordTrade {
+    font-weight: bold;
 }
