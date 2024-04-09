@@ -1,5 +1,6 @@
 body {
     background-color: rgb(122, 122, 190);
+    display: inline-grid;
 }
 
 nav {
@@ -21,6 +22,48 @@ nav {
     margin: 8px;
 }
 
+
+.wordTrade {
+    font-weight: bold;
+}
+.footer {
+    display: grid;
+    background-color: rgb(124, 223, 220);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: 0;
+    align-self: end;
+}
+
+.feature {
+    display: grid;
+    background-color: pink
+}
+
+.featText {
+    display: grid;
+    background-color: brown;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+.footOne {
+    display: grid;
+    margin: 5px;
+}
+.footTwo {
+    display: grid;
+    margin: 0;
+}
+.footThree {
+    display: grid;
+    margin: 0;
+}
+.footFour {
+    display: grid;
+    margin: 0;
+}
 /* .trade2 {
     display: grid;
     grid-template-columns: 9fr 1fr 1fr 1fr 1fr 1fr;
@@ -42,6 +85,3 @@ nav {
     margin: 6px;
 } */
 
-.wordTrade {
-    font-weight: bold;
-}
