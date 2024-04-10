@@ -1,21 +1,17 @@
 body {
     background-color: rgb(122, 122, 190);
-    display: inline-grid;
+    display: grid;
+    margin: 0;
+    padding: 0;
+
+
+    /* align-content: space-between;*/
 }
 
 nav {
     background-color: rgb(214, 214, 162);
 }
 
-.objOne {
-    
-}
-
-/* .wholeTrade {
-    display: grid;
-    background-color: rgb(214, 214, 162);
-    grid-template-rows: 1fr;
-    } */
 .trade1 {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr 5fr 1fr;
@@ -34,20 +30,41 @@ nav {
     margin: 0;
     padding: 0;
     align-self: end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .feature {
     display: grid;
-    background-color: pink
+    grid-template-columns: 1fr 1fr;
 }
 
 .featText {
     display: grid;
-    background-color: brown;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    
+    background-color: pink;
+    text-align: left;
+    padding: 20px;
+
 }
+
+.empty {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: white;  
+}
+
+.featText2 {
+    display:flex;
+    background-color: brown;
+    justify-content: center;
+    padding:0;
+    align-items: center;   
+}
+
 .footOne {
     display: grid;
     margin: 5px;
