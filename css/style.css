@@ -1,8 +1,12 @@
+
+
 body {
     background-color: rgb(122, 122, 190);
     display: grid;
     margin: 0;
     padding: 0;
+    width: 100%
+    /* min-height: 100%; */
 
 
     /* align-content: space-between;*/
@@ -19,25 +23,42 @@ nav {
 }
 
 
-.wordTrade {
+.bold {
     font-weight: bold;
 }
-.footer {
+
+.trust {
     display: grid;
-    background-color: rgb(124, 223, 220);
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 0;
-    padding: 0;
-    align-self: end;
-    position: absolute;
-    bottom: 0;
+    background-color: rgb(128, 220, 156);
+
+}
+.trustText {
+    text-align: center;
+    margin: 15px;
+    font-size: 15px;
+
+}
+
+.circles {
+    background-color: purple;
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.innerCircle {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
     width: 100%;
 }
 
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .featText {
@@ -46,15 +67,16 @@ nav {
     grid-template-columns: 1fr;
     background-color: pink;
     text-align: left;
-    padding: 20px;
+    padding: 70px;
 
 }
 
 .empty {
-    display: flex;
-    width: 10px;
-    height: 10px;
-    background-color: white;  
+    width: 200px;
+    height: 225px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 30px;  
 }
 
 .featText2 {
@@ -62,7 +84,23 @@ nav {
     background-color: brown;
     justify-content: center;
     padding:0;
-    align-items: center;   
+}
+
+.footer {
+    display: grid;
+    background-color: rgb(124, 223, 220);
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+ 
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: ;
+    /* align-self: end; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    
+    
 }
 
 .footOne {
@@ -81,6 +119,26 @@ nav {
     display: grid;
     margin: 0;
 }
+
+
+
+@media (minimum-width: 360px) {
+    .footer {
+        grid-template-columns: 1fr;
+        
+    }
+    .trust {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+    grid-template-columns: 1fr;
+    } 
+}
+
 /* .trade2 {
     display: grid;
     grid-template-columns: 9fr 1fr 1fr 1fr 1fr 1fr;
