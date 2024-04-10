@@ -32,6 +32,7 @@ nav {
 .trust {
     display: grid;
     background-color: rgb(128, 220, 156);
+    
 
 }
 .trustText {
@@ -50,7 +51,6 @@ nav {
 
 .innerCircle {
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
@@ -144,6 +144,10 @@ nav {
     .feature {
     grid-template-columns: 1fr;
     } 
+    .featText2 {
+        background-color: blueviolet;
+        transition: 1s;
+    }
 }
 
 /* .trade2 {
